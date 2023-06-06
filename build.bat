@@ -1,10 +1,12 @@
-rm -rfI build/ dist/
+python.exe -m pip install -U pip
+python.exe -m pip install -r requirements.txt
 
-pyinstaller \
---onefile \
-src/mdadiffusiongui.py
+rmdir /s build
+rmdir /s dist
 
-cp -r src/css dist/css
-cp -r examples dist/examples
+pyinstaller --onefile src/mdadiffusiongui.py
 
-tar.exe -cvzf mdadiffusiongui.zip dist
+robocopy src\\css dist\\css /E
+robocopy examples dist\\examples /E
+
+tar.exe -a -cf mdadiffusiongui.zip dist
