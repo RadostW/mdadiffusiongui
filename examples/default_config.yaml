@@ -1,0 +1,47 @@
+DisorderedBeads:
+    CAlphaDistance: 3.805 # Ang
+    HydrodynamicRadius: 4.2 # Ang
+OrderedBeads:
+#   1 g/ml = 0.602 Dalton / Angstrom^3
+#
+#   Protein hydration and unfolding – insights from experimental 
+#   partial specific volumes and unfolded protein models
+#   L. Murphy, N. Matubayasi, V. Payne, R. Levy (1998)
+#   https://doi.org/10.1016/S1359-0278(98)00016-9
+#
+#   excluded volume density: 0.52 +/- 0.14 Da / A^3
+    EffectiveDensity: 0.52 # Da / Ang^3
+    HydrationThickness: 3.0 # Ang
+Ensemble:
+    TotalSize: 30
+    BootstrapRounds: 10
+Buffer:
+    Viscosity: 1.0 # cP
+    Temperature: 293 # K    
+AminoAcidMasses:
+    A: 71.08
+    C: 103.14
+    D: 115.09
+    E: 129.12
+    F: 147.18
+    G: 57.06
+    H: 137.15
+    I: 113.17
+    K: 128.18
+    L: 113.17
+    M: 131.21
+    N: 114.11
+    P: 97.12
+    Q: 128.41
+    R: 156.2
+    S: 87.08
+    T: 101.11
+    V: 99.14
+    W: 186.21
+    Y: 163.18
+    Z: 0
+    O: 0
+    U: 0
+    J: 0
+    X: 0
+    B: 0
